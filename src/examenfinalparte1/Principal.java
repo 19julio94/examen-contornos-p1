@@ -2,30 +2,26 @@ package examenfinalparte1;
 
 public class Principal {
 
-    int i;
-
-    public Principal(int j, int m) {
-        i = suma(j, m);
-        print();
-    }
-
-    public Principal(int j) {
-        i = suma(j, j);
-        print();
-        
-    }
-
-    public Principal() {
-        i = -1;
-        print();
-    }
-
-    public int suma(int x, int x1) {
-        return x + x1;
-    }
+   public static void metodo(int x,int x1){
+   
+   Imprimir(x+x1);
+   
+   }
+   
+   public static void metodo(int x){
+   
+   metodo(x,x);
+   
+   }
+   
+   public static void metodo(){
+   
+   Imprimir(-1);
+   
+   }
     
-    public void print(){
-        System.out.println("Es:"+this.i);
+    public static void Imprimir(int valor){
+        System.out.println("El resultado es:"+valor);
     
     }
 }
